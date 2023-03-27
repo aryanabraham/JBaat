@@ -1,5 +1,5 @@
 import React from "react";
-import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
+import AddAvatar from "../img/add-image.png";
 
 const Register = () => {
   return (
@@ -8,15 +8,15 @@ const Register = () => {
         <span className="logo">JBaat!</span>
         <span className="title">Register</span>
         <form>
-          <input type="text" placeholder="display name" />
-          <input type="email" placeholder="email" />
-          <input type="password" placeholder="password" />
+          <input type="text" placeholder="Username" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
           <input style={{ display: "none" }} type="file" id="file" />
           <label htmlFor="file">
-            <img src={AddPhotoAlternateIcon} alt="" />
+            <img src={AddAvatar} alt="" />
             <span>Add an avatar</span>
           </label>
-          <button>Sign Up</button>
+          <button>Sign up</button>
         </form>
         <p>Have an account? Log in</p>
       </div>
