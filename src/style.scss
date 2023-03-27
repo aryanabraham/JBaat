@@ -49,11 +49,56 @@
         font-weight: bold;
         padding: 10px;
       }
+
+      label {
+        align-items: center;
+        color: #542583;
+        cursor: pointer;
+        display: flex;
+        font-size: 12px;
+        gap: 10px;
+
+        img {
+          padding-left: 3%;
+          width: 32px;
+        }
+      }
     }
     p {
       color: #542583;
       font-size: 12px;
       margin-top: 10px;
     }
+  }
+}
+
+.home {
+  align-items: center;
+  background-color: #542583;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
+  .container {
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    height: 80%;
+    overflow: hidden;
+    width: 65%;
+  }
+
+  .sidebar {
+    background-color: #fcba29;
+    flex: 1;
+
+    .navbar {
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  .mainchat {
+    flex: 2;
   }
 }
