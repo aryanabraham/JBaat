@@ -1,5 +1,7 @@
 import React from "react";
 import pp from "../img/pp.jpg";
+import { signOut } from "firebase/auth";
+import { auth } from "../firebase";
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -7,7 +9,7 @@ const Navbar = () => {
       <div className="user">
         <img src={pp} alt="profilepicture" />
         <span>Aryan</span>
-        <button>Logout</button>
+        <button onClick={() => signOut(auth)}>Logout</button>
       </div>
     </div>
   );
