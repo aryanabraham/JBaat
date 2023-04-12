@@ -4,12 +4,15 @@ import Call from "../img/telephone.png";
 import More from "../img/more.png";
 import Messages from "../components/Messages";
 import Input from "../components/Input";
+import { ChatContext } from "../context/ChatContext";
 
 const MainChat = () => {
+  const { data } = useContext(ChatContext);
+  
   return (
     <div className="mainchat">
       <div className="chatInfo">
-        <span>Abraham</span>
+        <span>{data.user?.displayName}</span>
         <div className="chatIcons">
           <img src={Video} alt="" />
           <img src={Call} alt="" />
